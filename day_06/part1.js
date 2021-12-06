@@ -3,7 +3,6 @@ const exampleInput = [3,4,3,1,2];
 
 let lanternFishes = input;
 
-
 const daysOfStudy = 80;
 let currentDay = 1;
 
@@ -17,8 +16,6 @@ while(currentDay <= daysOfStudy) {
 
     return lanternFish - 1;
   });
-  console.log('DAY: ', currentDay);
-  console.log('New Lanternfished', [...newLanternFishes, ...newBornLanterFishes]);
   lanternFishes = [...newLanternFishes, ...newBornLanterFishes];
   currentDay += 1;
 }
