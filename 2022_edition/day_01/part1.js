@@ -39,11 +39,10 @@ import data from './data.js';
 
 let highestCalories = 0;
 
-data.forEach((elve, index) => {
+data.forEach((elve) => {
   const sum = elve.map(snack => snack * 1).reduce((total, sum) => total + sum, 0);
   if (sum > highestCalories) {
     highestCalories = sum;
-    indexHigestCalories = index;
   }
 });
 
