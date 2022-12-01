@@ -38,7 +38,6 @@
 import data from './data.js';
 
 let highestCalories = 0;
-let indexHigestCalories = null;
 
 data.forEach((elve, index) => {
   const sum = elve.map(snack => snack * 1).reduce((total, sum) => total + sum, 0);
@@ -48,4 +47,4 @@ data.forEach((elve, index) => {
   }
 });
 
-console.log('RESULT', highestCalories, indexHigestCalories)
+console.log('RESULT', highestCalories)
