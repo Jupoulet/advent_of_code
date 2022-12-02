@@ -7,30 +7,19 @@ const matchingOpponentPlaySchema = {
   C: 'Scissors',
 }
 
+const DRAW = 'Y';
+const LOSE = 'X';
+const WIN = 'Z';
+
 const getWhatShouldIPlay = (opponentPlay, endResult) => {
-  // draw
-  if (endResult === 'Y') return opponentPlay;
-  // lose
-  if (endResult === 'X') {
-    switch (opponentPlay) {
-      case 'Rock':
-        return 'Scissors';
-      case 'Paper':
-        return 'Rock';
-      default:
-        return 'Paper';
-    }
-  }
-  // win
-  if (endResult === 'Z') {
-    switch (opponentPlay) {
-      case 'Rock':
-        return 'Paper';
-      case 'Paper':
-        return 'Scissors';
-      default:
-        return 'Rock';
-    }
+  if (endResult === DRAW) return opponentPlay;
+  switch (opponentPlay) {
+    case 'Rock':
+      return endResult === LOSE ? 'Scissors' : 'Paper';
+    case 'Paper':
+      return endResult === LOSE ? 'Rock' : 'Scissors';
+    default:
+      return endResult === LOSE ? 'Paper' : 'Rock';
   }
 }
 
