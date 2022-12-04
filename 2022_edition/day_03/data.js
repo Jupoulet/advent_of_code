@@ -1,4 +1,4 @@
-export const alphabet = 'abcdefghijqlmnopqrstuvwxyzABCDEFGHIJQLMNOPQRSTUVWXYZ';
+export const alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 export default `GbccTtTSGGbgrcWBGGrdgTnVQnCmNpCJlNnNPVfClcnN
 vMzvZhzhwDLVmQnClwwNQp
