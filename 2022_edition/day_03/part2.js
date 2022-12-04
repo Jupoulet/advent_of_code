@@ -1,6 +1,7 @@
 import data from './data.js';
 import { getLetterPriorityScore } from './part1.js';
 
+// Copied from YouDontNeedLodash repo https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore#_chunk
 const chunk = (input, size) => {
   return input.reduce((arr, item, idx) => {
     return idx % size === 0
