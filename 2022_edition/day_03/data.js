@@ -1,5 +1,12 @@
 export const alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
+export const example = `vJrwpWtwJgWrhcsFMMfFFhFp
+jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
+PmmdzqPrVvPwwTWBwg
+wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
+ttgJtRGJQctTZtZT
+CrZsJsPPZsGzwwsLwLmpwMDw`.split('\n')
+
 export default `GbccTtTSGGbgrcWBGGrdgTnVQnCmNpCJlNnNPVfClcnN
 vMzvZhzhwDLVmQnClwwNQp
 FRsZFzjQFsqRzRRjDZbdtTgdHBBWGrdBdHHs

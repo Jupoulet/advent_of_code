@@ -1,6 +1,6 @@
 import data, { alphabet } from './data.js';
 
-const getLetterPriorityScore = (letter) => {
+export const getLetterPriorityScore = (letter) => {
   return alphabet.indexOf(letter) + 1
 };
 
@@ -19,8 +19,8 @@ data
   }
 })
 
-console.log(
-  lettersInCommon.reduce((sum, current) => {
-    return sum + getLetterPriorityScore(current);
-  }, 0)
-);
+// console.log(
+//   lettersInCommon.reduce((sum, current) => {
+//     return sum + getLetterPriorityScore(current);
+//   }, 0)
+// );
