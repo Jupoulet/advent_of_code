@@ -23,14 +23,15 @@ const formattedInput = data.map((pair) => {
 
 const result = formattedInput.reduce((sum, pair) => {
   const [smallOne, bigOne] = pair.sort((a, z) => a.length - z.length);
-  // -- PART 1 --
-  if (smallOne.every(number => bigOne.includes(number))) {
-    return sum + 1;
-  }
-  // -- PART 2 --
-  // if (smallOne.some(number => bigOne.includes(number))) {
+  // -- PART 1 -- 
+  // if (smallOne.every(number => bigOne.includes(number))) {
   //   return sum + 1;
   // }
+
+  // -- PART 2 --
+  if (smallOne.some(number => bigOne.includes(number))) {
+    return sum + 1;
+  }
   return sum;
 }, 0);
 
