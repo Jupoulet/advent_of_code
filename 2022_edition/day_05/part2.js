@@ -6,10 +6,10 @@ const executeMovements = (grid, instruction) => {
 
   if (quantity === 0) return grid;
 
-  const elementRemovedFromList = gridCopy[from - 1].pop();
-  gridCopy[to - 1].push(elementRemovedFromList);
+  const elementRemovedFromList = gridCopy[from - 1].splice(-quantity);
+  gridCopy[to - 1].push(...elementRemovedFromList);
 
-  return executeMovements(gridCopy, [quantity - 1, from, to])
+  return gridCopy;
 }
 
 const processInstructions = (grid, instructions) => {
