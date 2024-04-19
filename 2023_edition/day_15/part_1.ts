@@ -31,10 +31,6 @@ const getCurrentValueOfString = (string: string) => {
 
 const object: any = {};
 
-// { label: 'rn', operation: '=', focalLength: 2 }
-// box = [{}, {}]
-
-
 listOfSequences.forEach((sequence) => {
     const { label, operation, focalLength } = sequence;
     const labelHashed = getCurrentValueOfString(label);
